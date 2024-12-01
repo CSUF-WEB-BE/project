@@ -5,8 +5,8 @@ import { Link } from "react-router-dom";
 function SearchBar() {
   const [query, setQuery] = useState({
     location: "",
-    minPrice: 0,
-    maxPrice: 0,
+    minPrice: undefined,
+    maxPrice: undefined,
   });
 
   const handleChange =(e) =>{

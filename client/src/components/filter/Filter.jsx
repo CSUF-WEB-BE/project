@@ -51,10 +51,10 @@ function Filter() {
             defaultValue={query.property}
           >
             <option value="">any</option>
-            <option value="apartment">Apartment</option>
-            <option value="house">House</option>
-            <option value="condo">Condo</option>
-            <option value="land">Land</option>
+            <option value="apartment">apartment</option>
+            <option value="house">house</option>
+            <option value="condo">condo</option>
+            <option value="land">land</option>
           </select>
         </div>
         <div className="item">
@@ -71,7 +71,7 @@ function Filter() {
         <div className="item">
           <label htmlFor="maxPrice">Max Price</label>
           <input
-            type="text"
+            type="number"
             id="maxPrice"
             name="maxPrice"
             placeholder="any"
