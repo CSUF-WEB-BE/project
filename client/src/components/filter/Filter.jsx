@@ -5,7 +5,6 @@ import { useSearchParams } from "react-router-dom";
 function Filter() {
   const [searchParams, setSearchParams] = useSearchParams();
   const [query, setQuery] = useState({
-    type: searchParams.get("Type") || "",
     city: searchParams.get("city") || "",
     property: searchParams.get("property") || "",
     minPrice: searchParams.get("minPrice") || "",
@@ -43,19 +42,6 @@ function Filter() {
         </div>
       </div>
       <div className="bottom">
-        <div className="item">
-          <label htmlFor="type">Type</label>
-          <select
-            name="type"
-            id="type"
-            onChange={handleChange}
-            defaultValue={query.type}
-          >
-            <option value="">any</option>
-            <option value="buy">Buy</option>
-            <option value="rent">Rent</option>
-          </select>
-        </div>
         <div className="item">
           <label htmlFor="property">Property</label>
           <select
